@@ -1,4 +1,0 @@
-markdown: redcarpet
-baseurl: /portfolio-wireframe
-exclude: ['README.md']
-permalink: pretty
