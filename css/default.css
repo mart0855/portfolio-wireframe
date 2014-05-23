@@ -49,7 +49,7 @@ a:hover {
 .container > header {
 	text-align: center;
 	font-size: 16px;
-	padding: 4em 2em 3em;
+	padding: 1em 2em 3em;
 	background: rgba(0,0,0,0.01);
 }
 
@@ -125,7 +125,7 @@ a:hover {
 	content: "\e003";
 }
 
-@media screen and (max-width: 25em) { 
+@media screen and (max-width: 25em) {
 	.codrops-icon span {
 		display: none;
 	}

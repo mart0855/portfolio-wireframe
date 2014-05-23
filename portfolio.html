@@ -11,64 +11,51 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/masking.css"
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
-	<![endif]-->
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-	<script type="text/javascript" src="http://www.queness.com/js/bsa.js"></script>
-
-	<script type="text/javascript">
-	$(function () {
-
-		var filterList = {
-
-			init: function () {
-
-				// MixItUp plugin
-				// http://mixitup.io
-				$('#portfoliolist').mixitup({
-					targetSelector: '.portfolio',
-					filterSelector: '.filter',
-					effects: ['fade'],
-					easing: 'snap',
-					// call the hover effect
-					onMixEnd: filterList.hoverEffect()
-				});
-
-			},
-
-			hoverEffect: function () {
-
-				// Simple parallax effect
-				$('#portfoliolist .portfolio').hover(
-					function () {
-						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
-					},
-					function () {
-						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
-					}
-				);
-
-			}
-
-		};
-
-		// Run the show!
-		filterList.init();
-
-
-	});
-	</script>
-		<!-- Masking -->
-	<script type="text/javascript" src="http://www.queness.com/js/bsa.js"></script>
-
 </head>
 <body>
+
+<div class="container">
+			<header>
+			<div class="main clearfix">
+				<nav id="menu" class="nav">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-services"></i>
+								</span>
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="portfolio">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-portfolio"></i>
+								</span>
+								<span>Portfolio</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-contact"></i>
+								</span>
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			</header>
+		</div><!-- /container -->
 
 	<div class="container">
 
@@ -394,11 +381,62 @@
 					</div>
 				</div>
 			</div>
-
-
 		</div>
-
 	</div><!-- container -->
 
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="http://www.queness.com/js/bsa.js"></script>
+
+	<script type="text/javascript">
+	$(function () {
+
+		var filterList = {
+
+			init: function () {
+
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});
+
+			},
+
+			hoverEffect: function () {
+
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+					}
+				);
+
+			}
+
+		};
+
+		// Run the show!
+		filterList.init();
+
+
+	});
+	</script>
+		<!-- Masking -->
+	<script type="text/javascript" src="http://www.queness.com/js/bsa.js"></script>
 </body>
 </html>
