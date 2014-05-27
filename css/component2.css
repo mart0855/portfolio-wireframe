@@ -65,9 +65,10 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
+	background: #444;
+	-webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease, clip 0.4s ease;
+	-moz-transition: opacity 0.4s ease, -moz-transform 0.4s ease, clip 0.4s ease;
+	transition: opacity 0.4s ease, transform 0.4s ease, clip 0.4s ease;
 	z-index: -1;
 	pointer-events: none;
 	cursor: default;
